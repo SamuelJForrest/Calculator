@@ -57,7 +57,15 @@ body {
         box-shadow: 0 4px 8px 0;
         .top {
             height: 30%;
+            width: 100%;
             background-color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            span {
+                margin: 0 7.5% 0 0;
+                font-size: 4rem;
+            }
         }
         .bottom {
             height: 70%;
@@ -102,6 +110,7 @@ body {
                 height: 100%;
                 width: 25%;
                 background-color: #7b7b7b;
+                color: white;
                 display: flex;
                 flex-direction: column;
                 span {
