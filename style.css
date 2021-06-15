@@ -93,6 +93,13 @@ body .calculator .top span {
   font-size: 4rem;
 }
 
+body .calculator .top .stored-number {
+  position: absolute;
+  top: 16%;
+  left: 35.5%;
+  font-size: 1.5rem;
+}
+
 body .calculator .bottom {
   height: 70%;
   display: -webkit-box;
@@ -145,6 +152,10 @@ body .calculator .bottom .numbers .row span {
   color: white;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body .calculator .bottom .numbers .row span:hover {

@@ -66,6 +66,12 @@ body {
                 margin: 0 7.5% 0 0;
                 font-size: 4rem;
             }
+            .stored-number {
+                position: absolute;
+                top: 16%;
+                left: 35.5%;
+                font-size: 1.5rem;
+            }
         }
         .bottom {
             height: 70%;
@@ -93,6 +99,7 @@ body {
                         background-color: #161a1d;
                         color: white;
                         transition: all 200ms ease;
+                        user-select: none;
                     }
                     span:hover{
                         cursor: pointer;
