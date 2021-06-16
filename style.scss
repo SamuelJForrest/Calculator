@@ -69,8 +69,8 @@ body {
             .stored-number {
                 position: absolute;
                 top: 16%;
-                left: 35.5%;
-                font-size: 1.5rem;
+                right: 29%;
+                font-size: 2rem;
             }
         }
         .bottom {
@@ -107,6 +107,7 @@ body {
                     }
                     .equals {
                         background-color: #ba181b;
+                        width: 67%;
                     }
                     .equals:hover {
                         background-color: #e03639;

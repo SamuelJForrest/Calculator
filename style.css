@@ -96,8 +96,8 @@ body .calculator .top span {
 body .calculator .top .stored-number {
   position: absolute;
   top: 16%;
-  left: 35.5%;
-  font-size: 1.5rem;
+  right: 29%;
+  font-size: 2rem;
 }
 
 body .calculator .bottom {
@@ -165,6 +165,7 @@ body .calculator .bottom .numbers .row span:hover {
 
 body .calculator .bottom .numbers .row .equals {
   background-color: #ba181b;
+  width: 67%;
 }
 
 body .calculator .bottom .numbers .row .equals:hover {
