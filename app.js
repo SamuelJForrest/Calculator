@@ -35,7 +35,13 @@ for (let i = 0; i < numberBtns.length; i++){
 
 //Event listeners
 delBtn.addEventListener('click', deleteFunction);
+divide.addEventListener('click', divideFunction);
+multiply.addEventListener('click', multiplyFunction);
+add.addEventListener('click', addFunction);
+subtract.addEventListener('click', subtractFunction);
+equals.addEventListener('click', equalsFunction);
 
+//Functions
 function deleteFunction(){
     numOne = [];
     numTwo = [];
@@ -51,8 +57,6 @@ function deleteFunction(){
     numDisplay.classList.remove('number-one-stored');
 }
 
-divide.addEventListener('click', divideFunction);
-
 function divideFunction(){
     numDisplay.classList.add('number-one-stored');
     numDisplay.classList.add('divide');
@@ -64,8 +68,6 @@ function divideFunction(){
     numDisplay.classList.remove('subtract');
     numDisplay.classList.remove('multiply');
 };
-
-multiply.addEventListener('click', multiplyFunction);
 
 function multiplyFunction(){
     numDisplay.classList.add('number-one-stored');
@@ -79,8 +81,6 @@ function multiplyFunction(){
     numDisplay.classList.remove('divide');
 };
 
-add.addEventListener('click', addFunction);
-
 function addFunction(){
     numDisplay.classList.add('number-one-stored');
     numDisplay.classList.add('add');
@@ -93,8 +93,6 @@ function addFunction(){
     numDisplay.classList.remove('divide');
 };
 
-subtract.addEventListener('click', subtractFunction);
-
 function subtractFunction(){
     numDisplay.classList.add('number-one-stored');
     numDisplay.classList.add('subtract');
@@ -106,8 +104,6 @@ function subtractFunction(){
     numDisplay.classList.remove('multiply');
     numDisplay.classList.remove('divide');
 }
-
-equals.addEventListener('click', equalsFunction);
 
 function equalsFunction(){
     if (numDisplay.classList.contains('divide')){
@@ -137,7 +133,7 @@ function equalsFunction(){
     storedNumber.textContent = '';
 }
 
-
+// Key inputs
 document.onkeypress = function(e){
     console.log(e.which);
     if (e.which === 48){
