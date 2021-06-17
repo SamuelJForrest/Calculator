@@ -62,7 +62,7 @@ function divideFunction(){
     numDisplay.classList.add('divide');
     calcArray.push(firstNumber);
     numDisplay.textContent = '';
-    storedNumber.textContent = firstNumber;
+    storedNumber.textContent = `${firstNumber} ÷`;
 
     numDisplay.classList.remove('add');
     numDisplay.classList.remove('subtract');
@@ -74,7 +74,7 @@ function multiplyFunction(){
     numDisplay.classList.add('multiply');
     calcArray.push(firstNumber);
     numDisplay.textContent = '';
-    storedNumber.textContent = firstNumber;
+    storedNumber.textContent = `${firstNumber} x`;
 
     numDisplay.classList.remove('add');
     numDisplay.classList.remove('subtract');
@@ -86,7 +86,7 @@ function addFunction(){
     numDisplay.classList.add('add');
     calcArray.push(firstNumber);
     numDisplay.textContent = '';
-    storedNumber.textContent = firstNumber;
+    storedNumber.textContent = `${firstNumber} +`;
 
     numDisplay.classList.remove('subtract');
     numDisplay.classList.remove('multiply');
@@ -98,7 +98,7 @@ function subtractFunction(){
     numDisplay.classList.add('subtract');
     calcArray.push(firstNumber);
     numDisplay.textContent = '';
-    storedNumber.textContent = firstNumber;
+    storedNumber.textContent = `${firstNumber} -`;
 
     numDisplay.classList.remove('add');
     numDisplay.classList.remove('multiply');
@@ -131,6 +131,20 @@ function equalsFunction(){
     numDisplay.classList.remove('number-one-stored');
     numTwo = [];
     storedNumber.textContent = '';
+};
+
+function backspaceFunction(){
+    if (!numDisplay.classList.contains('number-one-stored')){
+        numOne.pop();
+        numOne.slice(' ');
+        firstNumber = numOne.join('');
+        numDisplay.textContent = firstNumber; 
+    } else {
+        numTwo.pop();
+        numTwo.slice(' ');
+        secondNumber = numTwo.join('');
+        numDisplay.textContent = secondNumber; 
+    }
 }
 
 // Key inputs
@@ -270,3 +284,9 @@ document.onkeypress = function(e){
         subtractFunction();
     }
 }
+
+window.addEventListener('keydown', (e) => {
+    if (e.which === 8 || e.which === 46){
+        backspaceFunction();
+    }
+});
