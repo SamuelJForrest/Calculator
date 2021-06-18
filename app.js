@@ -62,6 +62,8 @@ function divideFunction(){
     numDisplay.classList.add('divide');
     calcArray.push(firstNumber);
     numDisplay.textContent = '';
+    numTwo = [];
+    secondNumber.textContent = '';
     storedNumber.textContent = `${firstNumber} ÷`;
 
     numDisplay.classList.remove('add');
@@ -74,6 +76,8 @@ function multiplyFunction(){
     numDisplay.classList.add('multiply');
     calcArray.push(firstNumber);
     numDisplay.textContent = '';
+    numTwo = [];
+    secondNumber.textContent = '';
     storedNumber.textContent = `${firstNumber} x`;
 
     numDisplay.classList.remove('add');
@@ -86,6 +90,8 @@ function addFunction(){
     numDisplay.classList.add('add');
     calcArray.push(firstNumber);
     numDisplay.textContent = '';
+    numTwo = [];
+    secondNumber.textContent = '';
     storedNumber.textContent = `${firstNumber} +`;
 
     numDisplay.classList.remove('subtract');
@@ -97,6 +103,8 @@ function subtractFunction(){
     numDisplay.classList.add('number-one-stored');
     numDisplay.classList.add('subtract');
     calcArray.push(firstNumber);
+    numTwo = [];
+    secondNumber.textContent = '';
     numDisplay.textContent = '';
     storedNumber.textContent = `${firstNumber} -`;
 
