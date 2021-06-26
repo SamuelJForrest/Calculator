@@ -66,8 +66,8 @@ body {
 }
 
 body .calculator {
-  height: 70vh;
-  width: 30vw;
+  height: 70%;
+  width: 30%;
   background-color: black;
   -webkit-box-shadow: 0 4px 8px 0;
           box-shadow: 0 4px 8px 0;
@@ -207,5 +207,303 @@ body .calculator .bottom .operators span {
 body .calculator .bottom .operators span:hover {
   cursor: pointer;
   background-color: #494c4e;
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#81DAEA), to(#2D9EB3));
+    background-image: linear-gradient(#81DAEA, #2D9EB3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  body .calculator {
+    height: 90%;
+    width: 70%;
+    background-color: black;
+    -webkit-box-shadow: 0 4px 8px 0;
+            box-shadow: 0 4px 8px 0;
+  }
+  body .calculator .top {
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  body .calculator .top span {
+    margin: 0 7.5% 0 0;
+    font-size: 4rem;
+  }
+  body .calculator .top .stored-number {
+    position: absolute;
+    top: 16%;
+    right: 29%;
+    font-size: 2rem;
+  }
+  body .calculator .bottom {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bold;
+  }
+  body .calculator .bottom .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 75%;
+    background-color: green;
+  }
+  body .calculator .bottom .numbers .row {
+    width: 100%;
+    height: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .calculator .bottom .numbers .row span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100%/3);
+    height: 100%;
+    font-size: 2.5rem;
+    background-color: #161a1d;
+    color: white;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  body .calculator .bottom .numbers .row span:hover {
+    cursor: pointer;
+    background-color: #494c4e;
+  }
+  body .calculator .bottom .numbers .row .equals {
+    background-color: #ba181b;
+    width: 67%;
+  }
+  body .calculator .bottom .numbers .row .equals:hover {
+    background-color: #e03639;
+  }
+  body .calculator .bottom .operators {
+    height: 100%;
+    width: 25%;
+    background-color: #7b7b7b;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .calculator .bottom .operators span {
+    height: calc(100%/5);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2rem;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+  }
+  body .calculator .bottom .operators span:hover {
+    cursor: pointer;
+    background-color: #494c4e;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#81DAEA), to(#2D9EB3));
+    background-image: linear-gradient(#81DAEA, #2D9EB3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  body .calculator {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    -webkit-box-shadow: 0 4px 8px 0;
+            box-shadow: 0 4px 8px 0;
+  }
+  body .calculator .top {
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  body .calculator .top span {
+    margin: 0 7.5% 0 0;
+    font-size: 4rem;
+  }
+  body .calculator .top .stored-number {
+    position: absolute;
+    top: 16%;
+    right: 29%;
+    font-size: 2rem;
+  }
+  body .calculator .bottom {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bold;
+  }
+  body .calculator .bottom .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 75%;
+    background-color: green;
+  }
+  body .calculator .bottom .numbers .row {
+    width: 100%;
+    height: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .calculator .bottom .numbers .row span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100%/3);
+    height: 100%;
+    font-size: 2.5rem;
+    background-color: #161a1d;
+    color: white;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  body .calculator .bottom .numbers .row span:hover {
+    cursor: pointer;
+    background-color: #494c4e;
+  }
+  body .calculator .bottom .numbers .row .equals {
+    background-color: #ba181b;
+    width: 67%;
+  }
+  body .calculator .bottom .numbers .row .equals:hover {
+    background-color: #e03639;
+  }
+  body .calculator .bottom .operators {
+    height: 100%;
+    width: 25%;
+    background-color: #7b7b7b;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .calculator .bottom .operators span {
+    height: calc(100%/5);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2rem;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+  }
+  body .calculator .bottom .operators span:hover {
+    cursor: pointer;
+    background-color: #494c4e;
+  }
 }
 /*# sourceMappingURL=style.css.map */
