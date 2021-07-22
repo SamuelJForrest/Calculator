@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,17 +106,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -51,8 +132,8 @@ table {
 body {
   height: 100vh;
   width: 100vw;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#81DAEA), to(#2D9EB3));
-  background-image: linear-gradient(#81DAEA, #2D9EB3);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#81daea), to(#2d9eb3));
+  background-image: linear-gradient(#81daea, #2d9eb3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +143,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .calculator {
@@ -146,7 +227,7 @@ body .calculator .bottom .numbers .row span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(100%/3);
+  width: calc(100% / 3);
   height: 100%;
   font-size: 2.5rem;
   background-color: #161a1d;
@@ -188,7 +269,7 @@ body .calculator .bottom .operators {
 }
 
 body .calculator .bottom .operators span {
-  height: calc(100%/5);
+  height: calc(100% / 5);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,8 +294,8 @@ body .calculator .bottom .operators span:hover {
   body {
     height: 100vh;
     width: 100vw;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#81DAEA), to(#2D9EB3));
-    background-image: linear-gradient(#81DAEA, #2D9EB3);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#81daea), to(#2d9eb3));
+    background-image: linear-gradient(#81daea, #2d9eb3);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -224,7 +305,7 @@ body .calculator .bottom .operators span:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   body .calculator {
     height: 90%;
@@ -254,8 +335,8 @@ body .calculator .bottom .operators span:hover {
   }
   body .calculator .top .stored-number {
     position: absolute;
-    top: 16%;
-    right: 29%;
+    top: 7.5vh;
+    right: 10vw;
     font-size: 2rem;
   }
   body .calculator .bottom {
@@ -300,7 +381,7 @@ body .calculator .bottom .operators span:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: calc(100%/3);
+    width: calc(100% / 3);
     height: 100%;
     font-size: 2.5rem;
     background-color: #161a1d;
@@ -337,7 +418,7 @@ body .calculator .bottom .operators span:hover {
             flex-direction: column;
   }
   body .calculator .bottom .operators span {
-    height: calc(100%/5);
+    height: calc(100% / 5);
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -362,8 +443,8 @@ body .calculator .bottom .operators span:hover {
   body {
     height: 100vh;
     width: 100vw;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#81DAEA), to(#2D9EB3));
-    background-image: linear-gradient(#81DAEA, #2D9EB3);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#81daea), to(#2d9eb3));
+    background-image: linear-gradient(#81daea, #2d9eb3);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -373,7 +454,7 @@ body .calculator .bottom .operators span:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   body .calculator {
     height: 100%;
@@ -403,8 +484,8 @@ body .calculator .bottom .operators span:hover {
   }
   body .calculator .top .stored-number {
     position: absolute;
-    top: 16%;
-    right: 29%;
+    top: 2.5vh;
+    right: 1vw;
     font-size: 2rem;
   }
   body .calculator .bottom {
@@ -449,7 +530,7 @@ body .calculator .bottom .operators span:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: calc(100%/3);
+    width: calc(100% / 3);
     height: 100%;
     font-size: 2.5rem;
     background-color: #161a1d;
@@ -486,7 +567,7 @@ body .calculator .bottom .operators span:hover {
             flex-direction: column;
   }
   body .calculator .bottom .operators span {
-    height: calc(100%/5);
+    height: calc(100% / 5);
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
