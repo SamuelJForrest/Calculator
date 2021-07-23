@@ -72,10 +72,7 @@ function divideFunction() {
   numDisplay.textContent = "";
   numTwo = [];
   secondNumber.textContent = "";
-  storedNumber.textContent =
-    firstNumber % 1 === 0
-      ? `${firstNumber} ÷`
-      : `${parseFloat(firstNumber).toFixed(2)} ÷`;
+  storedNumber.textContent = `${firstNumber} ÷`;
 
   numDisplay.classList.remove("num-final");
   numFinal = [];
@@ -93,10 +90,7 @@ function multiplyFunction() {
   numDisplay.textContent = "";
   numTwo = [];
   secondNumber.textContent = "";
-  storedNumber.textContent =
-    firstNumber % 1 === 0
-      ? `${firstNumber} x`
-      : `${parseFloat(firstNumber).toFixed(2)} x`;
+  storedNumber.textContent = `${firstNumber} x`;
 
   numDisplay.classList.remove("num-final");
   numFinal = [];
@@ -114,10 +108,7 @@ function addFunction() {
   numDisplay.textContent = "";
   numTwo = [];
   secondNumber.textContent = "";
-  storedNumber.textContent =
-    firstNumber % 1 === 0
-      ? `${firstNumber} +`
-      : `${parseFloat(firstNumber).toFixed(2)} +`;
+  storedNumber.textContent = `${firstNumber} +`;
 
   numDisplay.classList.remove("num-final");
   numFinal = [];
@@ -135,10 +126,7 @@ function subtractFunction() {
   numTwo = [];
   secondNumber.textContent = "";
   numDisplay.textContent = "";
-  storedNumber.textContent =
-    firstNumber % 1 === 0
-      ? `${firstNumber} -`
-      : `${parseFloat(firstNumber).toFixed(2)} -`;
+  storedNumber.textContent = `${firstNumber} -`;
 
   numDisplay.classList.remove("num-final");
   numFinal = [];
@@ -189,9 +177,6 @@ function equalsFunction() {
     firstNumber = parseFloat(numFinal.join(""));
     numDisplay.classList.add("num-final");
   }
-
-  console.log(firstNumber);
-  console.log(secondNumber);
 
   storedNumber.textContent = "";
   firstNumber.textContent = "";

@@ -178,7 +178,7 @@ body .calculator .top .num-display {
 body .calculator .top .stored-number {
   position: absolute;
   top: 16%;
-  right: 29%;
+  right: 37%;
   font-size: 1.75rem;
 }
 
@@ -329,14 +329,14 @@ body .calculator .bottom .operators span:hover {
             align-items: center;
     overflow: hidden;
   }
-  body .calculator .top span {
+  body .calculator .top .num-display {
     margin: 0 7.5% 0 0;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   body .calculator .top .stored-number {
     position: absolute;
     top: 7.5vh;
-    right: 10vw;
+    right: 20vw;
     font-size: 2rem;
   }
   body .calculator .bottom {
@@ -478,14 +478,14 @@ body .calculator .bottom .operators span:hover {
             align-items: center;
     overflow: hidden;
   }
-  body .calculator .top span {
+  body .calculator .top .num-display {
     margin: 0 7.5% 0 0;
-    font-size: 4rem;
+    font-size: 3.25rem;
   }
   body .calculator .top .stored-number {
     position: absolute;
     top: 2.5vh;
-    right: 1vw;
+    right: 2vw;
     font-size: 2rem;
   }
   body .calculator .bottom {
