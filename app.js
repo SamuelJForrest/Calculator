@@ -72,7 +72,10 @@ function divideFunction() {
   numDisplay.textContent = "";
   numTwo = [];
   secondNumber.textContent = "";
-  storedNumber.textContent = `${parseFloat(firstNumber).toFixed(2)} ÷`;
+  storedNumber.textContent =
+    firstNumber % 1 === 0
+      ? `${firstNumber} ÷`
+      : `${parseFloat(firstNumber).toFixed(2)} ÷`;
 
   numDisplay.classList.remove("num-final");
   numFinal = [];
@@ -90,7 +93,10 @@ function multiplyFunction() {
   numDisplay.textContent = "";
   numTwo = [];
   secondNumber.textContent = "";
-  storedNumber.textContent = `${parseFloat(firstNumber).toFixed(2)} x`;
+  storedNumber.textContent =
+    firstNumber % 1 === 0
+      ? `${firstNumber} x`
+      : `${parseFloat(firstNumber).toFixed(2)} x`;
 
   numDisplay.classList.remove("num-final");
   numFinal = [];
@@ -108,9 +114,11 @@ function addFunction() {
   numDisplay.textContent = "";
   numTwo = [];
   secondNumber.textContent = "";
-  storedNumber.textContent = `${parseFloat(firstNumber).toFixed(2)} +`;
+  storedNumber.textContent =
+    firstNumber % 1 === 0
+      ? `${firstNumber} +`
+      : `${parseFloat(firstNumber).toFixed(2)} +`;
 
-  console.log(typeof firstNumber);
   numDisplay.classList.remove("num-final");
   numFinal = [];
   firstNumber.textContent = "";
@@ -127,7 +135,10 @@ function subtractFunction() {
   numTwo = [];
   secondNumber.textContent = "";
   numDisplay.textContent = "";
-  storedNumber.textContent = `${parseFloat(firstNumber).toFixed(2)} -`;
+  storedNumber.textContent =
+    firstNumber % 1 === 0
+      ? `${firstNumber} -`
+      : `${parseFloat(firstNumber).toFixed(2)} -`;
 
   numDisplay.classList.remove("num-final");
   numFinal = [];
@@ -143,18 +154,12 @@ function equalsFunction() {
   numTwo = [];
   // DIVDED NUMBER
   if (numDisplay.classList.contains("divide")) {
-    let dividedNumber = parseInt(firstNumber) / parseInt(secondNumber);
+    let dividedNumber = parseFloat(firstNumber) / parseFloat(secondNumber);
     numFinal = [];
     numberToString(dividedNumber);
     firstNumber = numFinal.join("");
     numDisplay.classList.add("num-final");
-    if (dividedNumber % 1 === 0) {
-      numDisplay.textContent = firstNumber;
-    } else {
-      let decimalNumber = parseFloat(firstNumber).toFixed(2);
-      numDisplay.textContent = decimalNumber;
-    }
-    // firstNumber = dividedNumber;
+    numDisplay.textContent = firstNumber;
 
     // MULTIPLIED NUMBER
   } else if (numDisplay.classList.contains("multiply")) {
@@ -164,6 +169,7 @@ function equalsFunction() {
     numDisplay.textContent = numFinal.join("");
     firstNumber = parseFloat(numFinal.join(""));
     numDisplay.classList.add("num-final");
+    numDisplay.textContent = firstNumber;
 
     // ADDED NUMBER
   } else if (numDisplay.classList.contains("add")) {

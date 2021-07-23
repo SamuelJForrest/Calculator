@@ -170,16 +170,16 @@ body .calculator .top {
   overflow: hidden;
 }
 
-body .calculator .top span {
+body .calculator .top .num-display {
   margin: 0 7.5% 0 0;
-  font-size: 4rem;
+  font-size: 3.25rem;
 }
 
 body .calculator .top .stored-number {
   position: absolute;
   top: 16%;
   right: 29%;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 body .calculator .bottom {
